@@ -1,0 +1,65 @@
+<!-- Header row - spans all twelve columns -->
+<!-- <div class="row">
+
+  <div class="col-lg-02 col-md-02 col-sm-02 lblue headHeight">
+
+    <div class="imageDiv">
+      <img src="LeaderSpace-logos_white.png">
+    </div>
+  </div>
+
+  <div class="col-lg-06 col-md-06 col-sm-06 lblue headHeight">
+    <h1>Welcome to your Leaderspace Dashboard</h1>
+
+  </div>
+
+  <div class="col-lg-03 col-md-03 col-sm-03 lblue headHeight">
+    <div class="Rewards">
+      You have 60 dollars available to spend
+      <p><a href="https://demo.icostore.com/category.aspx?categoryID=2552" target="_blank">Redeem Your Dollars
+          Now!</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-01 col-md-01 col-sm-01 lblue headHeight">
+
+    <div class="signoutDiv">
+      <a class="sign-out-button" href="Leaderspace Login.html">Sign Out</a>
+    </div>
+  </div>
+</div>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+// // JS for the confetti animation//
+// var confettiSettings = { target: 'confetti-wrapper' };
+// var confetti = new ConfettiGenerator(confettiSettings);
+// confetti.render();
+
+// // Function to add a confetti animation when the page loads
+// window.onload = function() {
+//   confetti.render();
+// };
+
+// // JS for the confetti animation//
+// document.addEventListener('DOMContentLoaded', function() {
+//   var likeButton = document.getElementById('like-button');
+//   var likeCounter = document.getElementById('like-counter');
+//   var count = 0;
+
+//   likeButton.addEventListener('click', function() {
+//     count++;
+//     likeCounter.textContent = count;
+//   });
+// });

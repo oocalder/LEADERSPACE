@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- title -->
+  <title>Sign Up - LeaderSpace</title>
+
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="LeaderSpace, Leader Space, Mentorship, Mentor Website, Sign Up">
+  <meta name="description"
+    content="LeaderSpace - Collaborative Learning and Guidance: Connecting Mentors and Mentees for Success">
+  <meta name="author" content="CIS440 - Team 6">
+  <!-- <meta http-equiv="refresh" content="30"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="../CSS/Leaderspace SignUpPage.css">
+
+</head>
+
+<body>
+
+  <!-- picture that links to launchpage -->
+  <a href="../index.html">
+    <img src="../Logos/LeaderSpace-logos_black.png" id="logoId" alt="LeaderSpace Logo (Black)">
+  </a>
+
+
+  <h2 id="createAccountTextId">Create Your Account</h2>
+
+  <br>
+
+  <!-- login form -->
+  <form id="signupFormId" action="index.html" method="POST">
+
+    <input type="email" id="emailId" name="email" required placeholder="Email Address" autofocus>
+
+    <br>
+    <br>
+
+    <input type="text" id="usernameId" name="username" required placeholder="Username">
+
+    <br>
+    <br>
+
+    <input type="password" id="passwordId" name="password" required placeholder="Password">
+
+    <br>
+    <br>
+
+    <div id="positionContainerId">
+
+      <input type="radio" id="mentorId" name="position" value="Mentor">
+      <label for="mentorId">Mentor</label>
+
+      <input type="radio" id="menteeId" name="position" value="Mentee">
+      <label for="menteeId">Mentee</label>
+
+    </div>
+
+    <br>
+    <br>
+
+    <input value="Sign Up" id="signupButtonId" type="submit">
+
+  </form>
+  <!-- end of form -->
+
+  <hr>
+
+  <p>
+    Already have an account? <a href="Leaderspace Login.html">Log In</a>
+  </p>
+
+</body>
+
+<script src="../JS/SignUpPage.js"></script>
+
+</html>

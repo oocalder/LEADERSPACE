@@ -1,0 +1,810 @@
+/* css for homepage */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* basic element tags */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  background-color: grey;
+}
+
+h1 {
+  color: #BEC0C2
+}
+
+h2 {
+  font-size: 4vh;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2vh;
+}
+
+img {
+  margin: auto auto;
+  max-width: 15vw;
+  max-height: 15vh;
+}
+
+label {}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* section tags */
+
+/* HEADER */
+.header {
+  background-color: #5065A8;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 10vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.rewards {
+  margin-bottom: 5px;
+  /* Add margin to separate from the next element */
+}
+
+.rewards p {
+  margin: 0;
+}
+
+.rewards a {
+  color: #F9AD1B;
+  text-decoration: none;
+  transition: 2s;
+}
+
+.rewards a:hover {
+  text-decoration: underline;
+  transition: 3s;
+}
+
+.sign-out-button {
+  background-color: #F9AD1B;
+  border-radius: 4vh;
+  margin: 1vh;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  border: none;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.sign-out-button:hover {
+  background-color: #db971a;
+  transition: .5s;
+}
+
+/* RECOGNITION */
+.recognition-section {
+  background-color: #F2EEE4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.recognize {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.star {
+  color: #F9AD1B;
+  margin-right: 50px;
+}
+
+.profile-pic {
+  width: 50px;
+  /* or any size you want */
+  height: 50px;
+  /* should be the same as width for a perfect circle */
+  border-radius: 50%;
+  /* this makes it circular */
+  object-fit: cover;
+  /* ensures the image covers the area without distortion */
+  vertical-align: middle;
+  /* aligns the image vertically with the text */
+  margin-right: 10px;
+  /* optional: adds some space between the image and text */
+}
+
+.current-date {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.date {
+  text-align: center;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.top-box {
+  border: 1px solid #000;
+  /* border color */
+  padding: 10px;
+  /* inner spacing */
+  background-color: #5065A8;
+  /* background color */
+  margin-bottom: 10px;
+  /* space between the top box and comment box */
+  width: 50%;
+  /* full width of the container */
+  /* or you can use a specific value like width: 500px; */
+  height: 125px;
+  border-radius: 15px;
+  /* rounded corners */
+  margin-left: auto;
+  /* centers the box horizontally */
+  margin-right: auto;
+  /* centers the box horizontally */
+  position: relative;
+}
+
+.top-box p {
+  max-width: 600px;
+  /* This constrains the width of the paragraph */
+  margin-left: 0;
+  /* Aligns the paragraph to the left edge of its container */
+  margin-right: 100px;
+  /* Keeps the paragraph from stretching all the way to the right */
+  text-align: justify;
+  /* Adjusts the text alignment within the paragraph */
+  font-weight: bold;
+
+}
+
+
+
+.top-box h7.congrats,
+.top-box h7.name {
+
+  display: block;
+  /* This makes each span start on a new line */
+  font-weight: bold;
+  font-size: 15px;
+  color: #F9AD1B;
+  /* This sets the text color to white */
+}
+
+
+
+.comment-box {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#comment-button {
+  background-color: #5065A8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#like-button {
+  background-color: #F9AD1B;
+}
+
+.comment {
+  position: relative;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.commenter-name {
+  font-weight: bold;
+  text-align: left;
+}
+
+.comment-text {
+  text-align: left;
+  margin-top: 5px;
+  /* adjust as needed */
+}
+
+/* This CSS will style your horizontal rule to look like a line divider */
+.hr-divider {
+  border: none;
+  height: 1px;
+  background-color: #d1d1d1;
+  /* Change color if needed */
+  margin: 20px 0;
+}
+
+/* Add this to style the 'Comment' and 'Like' button container */
+.comment-like-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-like-container hr {
+  flex: 1;
+  /* Makes the horizontal rule take up the remaining space */
+}
+
+.comment-like-container button {
+  margin: 0 15px;
+  /* Adds spacing around buttons */
+}
+
+
+
+.timestamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* Media tags */
+
+/* For phones (portrait) unless another @media rule below is fired */
+@media only screen and (max-width: 500px) {
+  .col-sm-00 {
+    display: none;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  [class*="col-sm-"] {
+    border: 4px solid black;
+  }
+
+  .header {
+    height: auto;
+    /* Allow header height to adjust based on content */
+  }
+
+  .welcome h1,
+  .rewards,
+  .sign-out-button {
+    width: 100%;
+    /* Make these elements take full width */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+  }
+}
+
+/* For medium screens (e.g. landscape phones and portrait tablets) */
+@media only screen and (min-width: 501px) {
+  .col-md-00 {
+    display: none;
+  }
+
+  .col-md-01 {
+    width: 8.33%;
+  }
+
+  .col-md-02 {
+    width: 16.66%;
+  }
+
+  .col-md-03 {
+    width: 25.00%;
+  }
+
+  .col-md-04 {
+    width: 33.33%;
+  }
+
+  .col-md-05 {
+    width: 41.66%;
+  }
+
+  .col-md-06 {
+    width: 50.00%;
+  }
+
+  .col-md-07 {
+    width: 58.33%;
+  }
+
+  .col-md-08 {
+    width: 66.66%;
+  }
+
+  .col-md-09 {
+    width: 75.00%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100.00%;
+  }
+
+  body {
+    background-color: grey;
+  }
+
+  [class*="col-md-"] {
+    border: 4px solid grey;
+  }
+}
+
+/* For large screens or landscape tablets*/
+@media only screen and (min-width: 1024px) {
+  .col-md-00 {
+    display: initial;
+  }
+
+  .col-sm-00 {
+    display: initial;
+  }
+
+  .col-lg-01 {
+    width: 8.33%;
+  }
+
+  .col-lg-02 {
+    width: 16.66%;
+  }
+
+  .col-lg-03 {
+    width: 25.00%;
+  }
+
+  .col-lg-04 {
+    width: 33.33%;
+  }
+
+  .col-lg-05 {
+    width: 41.66%;
+  }
+
+  .col-lg-06 {
+    width: 50.00%;
+  }
+
+  .col-lg-07 {
+    width: 58.33%;
+  }
+
+  .col-lg-08 {
+    width: 66.66%;
+  }
+
+  .col-lg-09 {
+    width: 75.00%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100.00%;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  [class*="col-lg-"] {
+    border: 4px solid white;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  border-radius: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.lblue {
+  background-color: #5065A8;
+  border-radius: 15px;
+  border: 0.5vh solid white;
+}
+
+.beige {
+  background-color: #F2EEE4;
+}
+
+.yellow {
+  background-color: #F9AD1B;
+}
+
+.headHeight {
+  height: 10vh;
+  font-size: 1.5vh;
+}
+
+.mainHeight {
+  height: 40vh;
+  font-size: 2vh;
+}
+
+.recognizeHeight {
+  height: 40vh;
+  font-size: 2vh;
+}
+
+.footHeight {
+  height: 11vh;
+  font-size: 2vh;
+}
+
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  height: .2vh;
+  width: 1vh;
+}
+
+
+
+/* .Rewards {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.rewards a {
+  color: #F9AD1B;
+  text-decoration: none;
+}
+
+
+
+.sign-out-button {
+  color: navy;
+  background-color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.signoutDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+/* CSS for the Calendar / modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#calendar {
+  width: 100%;
+  height: 100%;
+}
+
+#add-event-button {
+  background-color: #F9AD1B;
+  border-radius: 4vh;
+  margin: 1vh;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#add-event-button:hover {
+  background-color: #db971a;
+  transition: .5s;
+}
+
+/* Define styles for the recognition section */
+.recognition-section {
+  background-color: #F2EEE4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.recognize {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.star {
+  color: #F9AD1B;
+  margin-right: 5px;
+}
+
+.comment-box {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+#comment-button,
+#like-button {
+  background-color: #5065A8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#like-button {
+  background-color: #F9AD1B;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+*/
+/*Style for Progress Bar*/
+
+#progressTextId {
+  color: white;
+  margin-top: 50px;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+
+
+}
+
+/* Add this CSS to your existing styles */
+
+ul.progress-bar li {
+  background-color: #7e7e7e;
+  position: relative;
+  text-indent: 0.5em;
+  cursor: pointer;
+}
+
+ul.progress-bar li:after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  margin-right: 0.4em;
+  width: 1.2em;
+  padding-top: 1.2em;
+  border: solid white;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-left: 0;
+  cursor: pointer;
+}
+
+
+
+ul.progress-bar {
+  list-style: none;
+  margin: 2px 0;
+  padding: 0;
+  overflow: hidden;
+  min-width: max-content;
+  display: flex;
+  justify-content: center;
+  max-width: 99%;
+
+}
+
+ul.progress-bar li {
+  float: left;
+  line-height: 20px;
+  height: 20px;
+  min-width: 200px;
+  position: relative;
+  transition: min-width 0.5s;
+  padding-right: 10px;
+  /* Add right padding to prevent extending past the ">" symbol */
+}
+
+ul.progress-bar li a {
+  padding: 0px 0px 0px 6px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+ul.progress-bar li.active {
+  background-color: #F9AD1B;
+}
+
+ul.progress-bar li.active::before {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 1.2em;
+  height: 200px;
+  background-color: navy;
+
+  /* Set the background color to navy */
+  z-index: -1;
+  /* Place it behind the ">" symbol */
+}
+
+ul.progress-bar li:hover {
+  min-width: 300px;
+}
+
+
+.recognition-section {
+  padding-bottom: 0;
+  /* Remove the padding from the recognition section on smaller screens */
+}
+
+.comment-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.comment-box button#comment-button,
+.comment-box button {
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.comment-box button#comment-button:hover,
+.comment-box button#like-button:hover {
+  background-color: #405080;
+}
+}
+
+
+
+/* CSS for Goals Section */
+#goalsList {
+  margin: 1vh;
+  text-align: left;
+}
+
+#goalsList input[type="checkbox"] {
+  margin-right: 1vw;
+}
+
+#goalsList label {
+  font-size: 2vh;
+  color: #333;
+}
+
+#goalInputId {
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4vh;
+  font-size: 2vh;
+}
+
+#addGoalButton {
+  padding: 12px 20px;
+  background-color: #F9AD1B;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  border: none;
+  cursor: pointer;
+  border-radius: 4vh;
+  transition: .5s;
+}
+
+#addGoalButton:hover {
+  background-color: #e6a428;
+  transition: .5s;
+}
